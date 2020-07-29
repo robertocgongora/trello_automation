@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-29T21:40:26.649Z",
+    "end": "2020-07-29T21:40:36.599Z",
+    "duration": 9950,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e5c18a23-197d-4d20-908d-be1476628ffe",
+      "title": "",
+      "fullFile": "cypress/integration/login.js",
+      "file": "cypress/integration/login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7bace857-6d48-48a4-a2d4-514f2d2b214a",
+          "title": "trello log in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to log in",
+              "fullTitle": "trello log in should be able to log in",
+              "timedOut": null,
+              "duration": 9847,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login');\ncy.get('#user').type('rcgongora');\ncy.get('#password').type('rcgongora');\ncy.get('#login').click();\ncy.url().should('include', '/boards');",
+              "err": {},
+              "uuid": "6c5d5397-cefe-4065-9143-07a83d79faae",
+              "parentUUID": "7bace857-6d48-48a4-a2d4-514f2d2b214a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6c5d5397-cefe-4065-9143-07a83d79faae"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9847,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

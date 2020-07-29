@@ -1,0 +1,21 @@
+{
+  "name": "trello_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "clean-reports": "rm -rf cypress/reports",
+    "test": "npm run clean-reports; npx cypress run",
+    "merge-report": "npx mochawesome-merge --reportDir cypress/reports/separate-reports cypress/reports/full_report.json",
+    "generate-report": "npx mochawesome-report-generator --reportDir cypress/reports cypress/reports/full_report.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.11.0",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}
